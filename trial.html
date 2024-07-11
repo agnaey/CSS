@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Squares</title>
+    <style>
+
+        .outer-square {
+            display: flex;
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 183, 255);
+            border: 1px solid black;
+        }
+
+        .inner-square {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(90, 92, 0);
+            border: 1px solid black;
+        }
+
+        .inner-most-square {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 179);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-square">
+        <div class="inner-square"></div>
+            <div class="inner-most-square"></div>
+
+    </div>
+</body>
+</html>
