@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter{
+            color: blueviolet;
+            font-size: larger;
+        }
+        p::first-line{
+            color: blue;
+        }
+        ::marker{
+            color: blue;
+            font-size: 30px;
+        }
+        ::selection{
+            color: red;
+            background-color: aqua;
+        }
+        #h1{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        #h1 li a{
+           display: block;
+           padding: 14px 16px;
+           text-decoration: none;
+           
+
+
+        }
+        #h1 li{
+            float: left;
+        }
+        #h1 li:hover{
+            color: brown;
+            background-color: aqua;
+        }
+        
+        #h2{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            position: fixed;
+            width: 150px;
+            height: 800px;
+            background-color: gold;
+        }
+        #h2 li a{
+            padding: 10px 16px;
+            display: block;
+            width: 200px;
+            text-decoration: none;
+            
+        }
+        #h2 li :hover{
+            background-color: rgb(119, 73, 12);
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="h1">
+        <li><a href="home">home</a></li>
+        <li><a href="gallery">gallery</a></li>
+        <li><a href="video">video</a></li>
+        <li><a href="image">image</a></li>
+    </ul><br><br>
+    <ul id="h2">
+        <li><a href="ok">home</a></li>
+        <li><a href="gallery">gallery</a></li>
+        <li><a href="video">video</a></li>
+        <li><a href="image">image</a></li>
+    </ul> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laborum impedit ad voluptatibus! Saepe sint, suscipit temporibus consequuntur doloribus assumenda numquam non dolorem tempore ipsum quia ratione dicta atque minima!</p>
+    </body>
+</html>
