@@ -1,0 +1,77 @@
+body{
+    background-color: gray;
+}
+ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+li{
+    float: left;
+    padding: 15px 50px;
+    
+}
+li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: chartreuse;
+    font-style: oblique;
+}
+li:hover:not(.logo){
+    background-color: rgb(48, 35, 117);
+}
+li:hover a{
+    color: rgb(245, 88, 15);
+}
+.active{
+    background-color: rgb(48, 35, 117);
+}
+li p{
+    display: inline;
+    color:rgb(255, 155, 5);
+    font-size: 20px;
+}
+.logo{
+    background-color: rgb(182, 18, 53);
+}
+img{
+    width: 100%;
+    height: 900px;
+}
+.container{
+    position: relative;
+}
+.center{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    
+}
+button{
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    text-align: center;
+    border: 3px solid black;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(50, 102, 116);
+    
+    
+}
+button a{
+    text-decoration: none;
+    
+}
+button :hover{
+    background-color: aqua;
+
+}
+button :hover{
+    color: black;
+}
