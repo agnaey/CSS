@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         input[type=search] {
+         width: 100%;
+         box-sizing: border-box;
+         border: 2px solid rgb(233, 160, 118);
+         border-radius: 4px;
+         font-size: 16px;
+         background-color: rgb(248, 11, 11);
+         background-image: url('magnifying-glass-checkered-background_1262-6424.avif');
+         background-position: 10px 10px; 
+         background-repeat: no-repeat;
+          padding: 12px 20px 12px 50px;
+          background-size: 40px 40px;
+          color: white;
+        }   
+        input[type=text],select{
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            background-color: rgb(233, 160, 118);
+            border: 1px solid red;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: rgb(64, 207, 46);
+            color: white;
+            padding: 12px 18px;
+            margin: 28px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+
+        }
+        input[type=submit]:hover {
+            background-color: green;
+        }
+        div{
+            border-radius: 5px;
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <input type="search" name="search" placeholder="Search..">
+      </form>
+      
+    <div>
+        <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="First name" placeholder="your name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="last name" placeholder="your last name">
+
+        <label for="country">country</label>
+        <select name="country" id="country">
+        <option value="india">india</option>
+        <option value="canada">canada</option>
+        <option value="USA">USA</option>
+        </select>
+
+        <input type="submit" value="submit">
+    </form>
+
+    </div>
+</body>
+</html>
