@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color:antiquewhite;
 }
 ol{
     list-style: none;
@@ -45,7 +45,7 @@ img{
 }
 .center{
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 100%;
     text-align: center;
     font-size: 40px;
@@ -54,7 +54,7 @@ img{
 }
 .atag{
     position: absolute;
-    top: 90%;
+    top: 95%;
     right: 50%;
     text-align: center;
     border: 3px solid black;
@@ -62,7 +62,7 @@ img{
     height: 40px;
     background-color: rgb(50, 102, 116);
     text-decoration: none;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .atag:hover{
     background-color: aqua;
@@ -96,7 +96,7 @@ input[type=submit]:hover {
 }
 div{
     border-radius: 5px;
-    background-color: antiquewhite;
+
     padding: 20px;
 }
 input[type=number],select{
