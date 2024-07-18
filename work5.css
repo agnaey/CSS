@@ -1,0 +1,27 @@
+.head{grid-area: head;}
+.nav{grid-area: nav;}
+.body{grid-area: body;}
+.img{grid-area: img;}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'head head head head nav nav'  
+    'body body body body img img'
+    'body body body body img img';
+    
+    padding: 10px;
+    background-color: aqua;
+
+}
+.head{
+    background-color: tomato;
+}
+.nav{
+    background-color: antiquewhite;
+}
+.body{
+    background-color: blue;
+}
+.img{
+    background-color: blueviolet;
+}
