@@ -2,26 +2,74 @@
 .nav{grid-area: nav;}
 .body{grid-area: body;}
 .img{grid-area: img;}
+.msg{grid-area:msg;}
+.btn{grid-area:btn;}
 .container{
     display: grid;
     grid-template-areas: 
     'head head head head nav nav'  
     'body body body body img img'
-    'body body body body img img';
+    'body body body body img img'
+    'msg msg msg msg img img'
+    'btn btn btn btn img img';
+    grid-template-rows: 80px 370px 310px 230px 200px;
+    text-align: center;
     
-    padding: 10px;
     background-color: aqua;
 
 }
 .head{
     background-color: tomato;
+    font-size: 50px;
+    padding: 15px;
 }
 .nav{
     background-color: antiquewhite;
+    font-size: 50px;
+    padding: 5px;
+    
+}
+a{
+    padding: 10px;
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 0, 0);
 }
 .body{
     background-color: blue;
+    font-size: 50px;
+    padding: 35px;
+
 }
 .img{
     background-color: blueviolet;
+    
+}
+.img img{
+width: 100%;
+height: 100%;
+}
+.msg{
+    background-color: chartreuse;
+    font-size: 50px;
+    padding: 70px;
+}
+
+.btn{
+    display: flex;
+    background-color: chocolate;
+    font-size: 40px;
+    justify-content: center;
+}
+.btn1{
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 50PX;
+}
+.btn2{
+    background-color: blue;
+width: 100%;
+padding: 50PX;
 }
