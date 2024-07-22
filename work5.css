@@ -7,12 +7,13 @@
 .container{
     display: grid;
     grid-template-areas: 
-    'head head head head nav nav'  
-    'body body body body img img'
-    'body body body body img img'
-    'msg msg msg msg img img'
-    'btn btn btn btn img img';
-    grid-template-rows: 80px 370px 310px 230px 200px;
+    'head head head head head head'
+    'nav nav nav nav nav nav '
+    'img img img img img img'
+    'body body body body body body'
+    'msg msg msg msg msg msg'
+    'btn btn btn btn btn btn';
+    grid-template-rows: auto auto auto auto auto auto;
     text-align: center;
     
     background-color: aqua;
@@ -24,17 +25,19 @@
     padding: 15px;
 }
 .nav{
+    display: flex;
     background-color: antiquewhite;
     font-size: 50px;
     padding: 5px;
     
 }
-a{
+.nav a{
     padding: 10px;
     color: blue;
     text-decoration: none;
+    text-align: center;
 }
-a:hover{
+.nav a:hover{
     color: rgb(0, 0, 0);
 }
 .body{
@@ -49,7 +52,7 @@ a:hover{
 }
 .img img{
 width: 100%;
-height: 100%;
+height: auto;
 }
 .msg{
     background-color: chartreuse;
@@ -72,4 +75,19 @@ height: 100%;
     background-color: blue;
 width: 100%;
 padding: 50PX;
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+   .container .head .nav .body .img .msg .btn {
+        flex-direction: column;
+    }
+    
 }
