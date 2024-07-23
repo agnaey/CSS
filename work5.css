@@ -7,13 +7,13 @@
 .container{
     display: grid;
     grid-template-areas: 
-    'head head head head head head'
-    'nav nav nav nav nav nav '
-    'img img img img img img'
-    'body body body body body body'
-    'msg msg msg msg msg msg'
-    'btn btn btn btn btn btn';
-    grid-template-rows: auto auto auto auto auto auto;
+    'head head head head nav nav'
+    'body body body body img img '
+    'body body body body img img'
+    'body body body body img img'
+    'msg msg msg msg img img'
+    'btn btn btn btn img img';
+    grid-template-rows: 90px 90px 200px 150px;
     text-align: center;
     
     background-color: aqua;
@@ -21,13 +21,13 @@
 }
 .head{
     background-color: tomato;
-    font-size: 50px;
+    font-size: 5vw;
     padding: 15px;
 }
 .nav{
     display: flex;
     background-color: antiquewhite;
-    font-size: 50px;
+    font-size: 5vw;
     padding: 5px;
     
 }
@@ -42,7 +42,7 @@
 }
 .body{
     background-color: blue;
-    font-size: 50px;
+    font-size: 5vw;
     padding: 35px;
 
 }
@@ -50,20 +50,17 @@
     background-color: blueviolet;
     
 }
-.img img{
-width: 100%;
-height: auto;
-}
+
 .msg{
     background-color: chartreuse;
-    font-size: 50px;
+    font-size: 5vw;
     padding: 70px;
 }
 
 .btn{
     display: flex;
     background-color: chocolate;
-    font-size: 40px;
+    font-size: 5vw;
     justify-content: center;
 }
 .btn1{
@@ -84,10 +81,21 @@ body{
     font-family: Arial;
     margin: 0;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
 
-@media screen and (max-width: 400px) {
-   .container .head .nav .body .img .msg .btn {
-        flex-direction: column;
+@media screen and (max-width: 600px) {
+    .container{
+    grid-template-areas: 
+    'head head head head '
+    'nav nav nav nav'
+    'body body body body '
+    'img img img img'
+    'msg msg msg msg'
+    'btn btn btn btn';
+    grid-template-rows: 70px 70px 270px 350px 150px 120px;
     }
     
 }
